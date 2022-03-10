@@ -26,7 +26,7 @@ const productRoutes = require("./api/routes/products");
 // użycie routów
 app.use("/products", productRoutes);
 
-//domyślny router
+//domyślny route
 app.use((req, res, next) => {
     res.status(200).json({wiadomosc: "Wszystko śmiga"})
 });
